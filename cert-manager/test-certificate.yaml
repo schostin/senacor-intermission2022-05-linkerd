@@ -1,0 +1,13 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: test
+  namespace: cert-manager
+spec:
+  dnsNames:
+    - test.sebastian-neb.sandboxes.sebastianneb.de
+  issuerRef:
+    kind: ClusterIssuer
+    name: letsencrypt-staging
+  renewBefore: 744h0m0s
+  secretName: test-tls

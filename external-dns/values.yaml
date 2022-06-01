@@ -1,0 +1,31 @@
+provider: google
+
+google:
+  project: sandbox-sebastian-neb-7ca0
+
+domainFilters:
+  - sebastian-neb.sandboxes.sebastianneb.de
+
+sources:
+  - service
+  - ingress
+
+publishInternalServices: true
+
+dryRun: false
+
+logLevel: info
+logFormat: json
+
+policy: sync
+registry: "txt"
+
+serviceAccount:
+  create: false
+  name: external-dns
+  automountServiceAccountToken: true
+
+rbac:
+  create: true
+  clusterRole: true
+  pspEnabled: false

@@ -1,0 +1,10 @@
+global:
+  rbac:
+    create: true
+
+installCRDs: true
+
+serviceAccount:
+  create: false
+  name: cert-manager
+  automountServiceAccountToken: true
