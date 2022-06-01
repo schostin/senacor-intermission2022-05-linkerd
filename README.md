@@ -4,6 +4,8 @@ LinkerD tryouts for the intermission 2022.
 
 This repository contains documentation and code samples of the deployed resources to the GKE cluster.
 
+No automation or pipeline included yet, maybe something for later :)
+
 ## Pre-requisites
 
 You'll some **Kubernetes cluster** running and best to also have a **DNS zone** somewhere. I used external-dns
